@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="QuanLyNhanSu.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+     <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation: moveBox 2s infinite alternate; /* Thiết lập animation */
+    }
+     .bg-info {
+        animation: moveText 2s infinite alternate; /* Thiết lập animation */
+    }
+    @keyframes moveBox {
+      0% {
+        transform: translateX(0); /* Di chuyển sang phải */
+      }
+      100% {
+        transform: translateX(200px); /* Di chuyển sang trái */
+      }
+    }
+  </style>
+    <asp:ContentPlaceHolder ID="NoiDung" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+    <h1 class="mt-5">Menu Quản lý Nhân viên</h1>
+    <ul class="nav nav-pills mt-4">
+      <li class="nav-item">
+        <a class="nav-link active" href="QuanLyNhanVien.aspx">Quản lý Nhân viên</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="QuanLyPhongBan.aspx">Quản Lý Phòng Ban</a>
+      </li>
+    
+    </ul>
+  </div>
+         <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <br />
+    </form>
+     <div class="footer">
+        <div class="bottom-0">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <Marquee><font color="red"><b>Thiết Kế Bởi: 222116003-HuynhThanhTu</b></font></Marquee>
+        </div>
+    </div>
+</body>
+</html>
