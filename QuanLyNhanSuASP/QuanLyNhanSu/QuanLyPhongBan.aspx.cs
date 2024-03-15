@@ -13,5 +13,10 @@ namespace QuanLyNhanSu
         {
 
         }
+
+        protected void grdNhanVien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
